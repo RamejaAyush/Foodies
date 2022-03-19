@@ -1,0 +1,56 @@
+@import "index.scss";
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+figure{
+    text-align: center;
+    img{
+        width: auto;
+        height: 100vh;
+    }
+}
+
+article{
+    flex: 1 1 20rem;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    .quart{
+        margin-top: 10vh;
+        h1{
+            text-align: left;
+            font-size: xx-large;
+        }
+        h6{
+            text-align: right;
+            font-size: medium;
+        }
+    }   
+    .intro{
+        margin-top: 10vh;
+        text-align: left;
+        h2{
+            font-size: x-large;
+        }
+        h4{
+            font-size: large;
+        }
+    }
+    .moreinfo{
+        text-align: right;
+        button {
+            margin-top: 10vh;
+            border: 1px solid var(--primary);
+            background-color: var(--primary);
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            z-index: 1;
+        }
+    }
+}
