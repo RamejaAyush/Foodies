@@ -10,16 +10,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
- <BrowserRouter>
-  <Nav />
-  <Routes>
-   <Route path="*" element={<PageNotFound />} />
-   <Route path="/" element={<Home />} />
-   <Route path="/Signup" element={<SignUp />} />
-   <Route path="/login" element={<Login />} />
-  </Routes>
- </BrowserRouter>,
- document.getElementById("root")
+  <BrowserRouter>
+    <Nav />
+    <Routes>
+      <Route path="*" element={<PageNotFound />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 reportWebVitals();
