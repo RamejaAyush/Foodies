@@ -18,6 +18,8 @@ body.light {
   --color: black;
   --primary: #fb0000;
   --nav: rgb(85, 85, 85);
+  --login-form: #ededed;
+  --btn: #333333;
 }
 
 body.dark {
@@ -25,6 +27,8 @@ body.dark {
   --color: #ffffff;
   --primary: #fb0000;
   --nav: rgba(0, 0, 0, 0.5);
+  --login-form: #262626;
+  --btn: #d4d4d4;
 }
 
 body {
