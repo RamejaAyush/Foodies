@@ -30,7 +30,7 @@ const Login = () => {
             </div>
             <div className="buttons">
               <button className="submit">Let's Go</button>
-              <Link href="#">Having Issues?</Link>
+              <Link to="/Change-user-creds">Having Issues?</Link>
             </div>
           </form>
         </div>
