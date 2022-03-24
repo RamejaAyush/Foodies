@@ -1,19 +1,8 @@
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from "react";
 import "../Styles/Login.scss";
 import LoginImg from "../Assert/Images/Login.png";
 
 const Login = () => {
-  let input = useRef(null);
-
-  useEffect(() => {
-    if (input) {
-      console.log(input.innerText);
-    } else {
-      console.log("empty");
-    }
-  }, []);
-
   return (
     <div className="login">
       <div className="img-container">
