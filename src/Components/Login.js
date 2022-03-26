@@ -1,14 +1,37 @@
 import { Link } from "react-router-dom";
 import "../Styles/Login.scss";
+import { motion } from "framer-motion";
 import LoginImg from "../Assert/Images/Login.png";
 
 const Login = () => {
+  const imgAnimation = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -100 },
+  };
+  const formAnimation = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 100 },
+  };
   return (
     <div className="login">
-      <div className="img-container">
+      <motion.div
+        variants={imgAnimation}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 1 }}
+        className="img-container">
         <img src={LoginImg} alt="" />
-      </div>
-      <div className="form-container">
+      </motion.div>
+      <motion.div
+        variants={formAnimation}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 1 }}
+        className="form-container">
         <div className="login-form">
           <form action="#">
             <header>
@@ -38,7 +61,7 @@ const Login = () => {
           <h2>New User?</h2>
           <Link to="/signup">SignUp</Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
