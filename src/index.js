@@ -12,12 +12,6 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <BrowserRouter>
     <Nav />
-    <Routes>
-      <Route path="*" element={<PageNotFound />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/Signup" element={<SignUp />} />
-      <Route path="/login" element={<Login />} />
-    </Routes>
   </BrowserRouter>,
   document.getElementById("root")
 );
