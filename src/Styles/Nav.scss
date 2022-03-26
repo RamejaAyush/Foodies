@@ -8,7 +8,6 @@ nav {
   padding: 0 5%;
   justify-content: space-between;
   align-items: center;
-  background: var(--nav);
 
   .logoContainer {
     width: auto;
@@ -24,6 +23,7 @@ nav {
       border-radius: 5px;
       font-family: "Saira Stencil One", cursive;
       font-size: 30px;
+      color: var(--constant);
     }
 
     h1 {
