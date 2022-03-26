@@ -1,7 +1,4 @@
-import { Link, Routes, BrowserRouter, Route } from "react-router-dom";
-import Home from "./Home";
-import SignUp from "./Signup";
-import Login from "./Login";
+import { Link } from "react-router-dom";
 import "../Styles/Nav.scss";
 
 const Nav = () => {
@@ -28,11 +25,6 @@ const Nav = () => {
           <button className="theme">☼</button>
         </div>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
     </>
   );
 };
