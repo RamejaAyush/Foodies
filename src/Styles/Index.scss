@@ -18,9 +18,9 @@ body.light {
   --color: black;
   --primary: #fb0000;
   --primary-opac: #fb000071;
-  --nav: rgba(0, 0, 0, 0.342);
   --login-form: #ededed;
   --btn: #333333;
+  --constant: #fff;
 }
 
 body.dark {
@@ -28,9 +28,9 @@ body.dark {
   --color: #ffffff;
   --primary: #fb0000;
   --primary-opac: #fb0000a9;
-  --nav: rgba(0, 0, 0, 0.5);
   --login-form: #262626;
   --btn: #d4d4d4;
+  --constant: #fff;
 }
 
 body {
