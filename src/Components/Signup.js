@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../Styles/Login.scss";
 import { motion } from "framer-motion";
-import LoginImg from "../Assert/Images/Login.png";
+import SignUpImg from "../Assert/Images/signUp.jpg";
 
 const SignUp = () => {
   const imgAnimation = {
@@ -23,7 +23,7 @@ const SignUp = () => {
         exit="exit"
         transition={{ duration: 1 }}
         className="img-container">
-        <img src={LoginImg} alt="" />
+        <img src={SignUpImg} alt="" />
       </motion.div>
       <motion.div
         variants={formAnimation}
